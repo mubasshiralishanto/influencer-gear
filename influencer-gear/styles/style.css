@@ -1,0 +1,334 @@
+/* ============
+       Fonts 
+    ============ */
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+    /* ======================
+           Common Utilites 
+        ===================== */
+    
+    
+    body{
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+    } 
+    .section-title{
+        text-align: center;
+    }
+    
+    
+    /* ====================
+           Header Style 
+        ==================== */
+        nav{
+            height: 6em; 
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+        } 
+        .nav-links li{
+            list-style: none;
+        }
+        .nav-links{
+            display: flex;
+            gap: 30px;
+         }
+        .fa-solid.fa-bars{
+            display: none;
+        }
+        
+    
+    
+         /* ================
+                Blogs Item 
+             ================ */
+    
+     
+        .blogs{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 6em;
+        } 
+        .blog-info button{   
+            background-color: #E02C6D;
+            border: none;
+            border-radius: 50px;
+            padding: 10px;
+            width: 13em;
+            
+        }
+        .blog-info button a{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            color: white;
+            font-weight: 700;
+            font-size: 15px;
+            text-decoration: none;
+        }
+        .blog-image img{
+            width: 350px;
+            height: 360px;
+        }
+        .position-mover img{
+            width: 350px;
+            height: 370px;
+            position: absolute;
+            top: 190px;
+            left: 770px;
+        }
+     
+    
+        /* ===============
+             COMPANY LOGO 
+            =============== */
+    
+            hr{  
+                border-top-right-radius: 30px;
+                opacity: calc(50%);
+                width: 1010px;
+            }
+        .company-logo{ 
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 0px 100px 0px 100px;
+        }
+    
+    
+    
+    
+        /* =====================
+             POPULAR COLLECTION
+            =====================*/
+            .cards{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                justify-items: center;
+                padding: 90px;
+                grid-row-gap: 30px;
+                grid-column-gap: 31px;
+            }
+            .card-bio{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 20px;
+            }
+            .card{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid gray;
+                border-radius: 15px;
+                box-shadow: 0px 0px 5px gray,0px 0px 10px gray, 0px 0px 15px gray;
+                width: 330px; 
+            }
+            .thumbnail img{
+                width: 300px;
+            }
+            .card-detail{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;  
+            }
+            .popular-collection-link{
+                display: flex;
+                justify-content: flex-end;
+                padding-right: 50px;
+                gap: 20px;
+            }
+            .popular-collection-link a{
+                color: #E02C6D;
+                text-decoration: none;
+    
+            }
+            .popular-collection-link img{
+                color: #E02C6D;
+            }
+    
+    
+    
+            /* ================
+                 featured Item 
+                ================ */
+    
+            .featured-detail{
+                display: flex;
+                padding: 6em;
+                gap: 96px;
+            }
+            .featured-detail button{   
+                background-color: #E02C6D;
+                border: none;
+                padding: 10px;
+                width: 10em;
+                
+            }
+            .featured-detail button a{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                color: white;
+                font-weight: 700;
+                font-size: 15px;
+                text-decoration: none;
+            }
+    
+            .featured-image img{
+                width: 404px;
+                height: 270px;
+            }
+    
+    
+        /* =============
+               FOOTER 
+            =============*/
+        footer{
+            display: flex;
+            flex-direction: column;
+            color: white;
+            background-color: #0A0826;
+            height: 10em;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+        .footer-info p{
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        footer ul{
+            display: flex;
+            gap: 25px;
+            list-style: none;
+            padding-left: 0;
+            justify-content: center;
+        }
+        .footer-info h3{
+            font-weight: 500; 
+            margin-bottom: 3px;
+        }
+    
+    
+    
+    
+    
+        /* ====================================================
+                                MEDIA QUERIZ
+            ==================================================== */
+    
+    
+        /* ================
+             MOBILE DEVICES
+            ================= */
+    
+        @media only screen and (max-width:700px) {
+             nav{
+                justify-content: space-around;
+                align-items: center;
+             } 
+             .fa-solid.fa-bars{
+                display: block;
+                visibility: visible;
+            }
+             .nav-links{
+                margin: 0;
+                padding: 0;
+             }
+            .links{ 
+                display: none;
+            } 
+            /* ================
+                Blogs Item 
+             ================ */
+            .blogs{
+                flex-direction: column-reverse;
+                padding: 20px;
+                justify-content: center;
+            }
+            .blog-info{
+                text-align: center;
+            } 
+             
+            .blog-image img{
+                width: 290px;
+                height: 260px;
+            }
+            .position-mover img{
+                width: 250px;
+                height: 260px;
+                position: absolute;
+                top: 115px;
+                left: 85px;
+            }
+    
+    
+    
+            /* ==================
+                   COMPANY LOGO 
+                ===================*/
+    
+    
+                hr{
+                    display: none;
+                }
+                .company-logo{
+                    margin-top: 30px;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    padding: 0; 
+                    align-content: center;
+                    justify-items: center;
+                    grid-column-gap: 20px;
+                    grid-row-gap: 20px;
+                }
+                .company-logo img{
+                    display: flex; 
+                    width: 51px;
+                }
+    
+            /* ==================
+                POPULAR COLLECTION 
+                ===================*/
+            
+            .cards{
+                grid-template-columns: repeat(1, 1fr);
+                padding: 0;
+            }
+            .popular-collection-link{
+                padding-right: 30px;
+                margin-top: 1.4em;
+            }
+    
+    
+            /* ================
+                 featured Item 
+                ================ */
+    
+            .featured-detail{
+                flex-direction: column;
+                padding: 3.2em;
+                gap: 10px;
+            }
+            .featured-image img{
+                width: 299px;
+                height: 188px;
+                
+            }
+            .featured-info{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+     
+             
+        }
